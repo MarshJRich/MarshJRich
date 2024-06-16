@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800");
+
+body {
+    background-color: #f5f5f5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px 0px 10px 0px;
+  column-gap: 10px;
+}
+
+.grid-item {
+  padding: 0px 0px 10px 0px;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* .grid-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px 10px 10px 10px;
+  column-gap: 10px;
+} 
+
+.grid-line {
+  padding: 0px 10px 10px 10px;
+  text-align: left;
+} */
+
+h1 {
+  font-family: 'open sans';
+  color: #111111;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'open sans';
+  color: #111111;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: 'open sans';
+  color: #111111;
+}
+
+h4 {
+  font-family: 'open sans';
+  font-weight:600;
+  color: #111111;
+}
+
+h4 a {
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  margin: 10px 25px 10px 0px;
+  border: none;
+  background-color: #111111;
+  color: #f5f5f5;
+  display: block;
+  font-weight:400;
+}
+
+h4 a:hover {
+  background-color: #00a2ff;
+  color: #F5F5F5;
+}
+
+h5 {
+  font-family: 'open sans';
+  color: #111111;
+}
+
+h6 {
+  font-family: 'open sans';
+  color: #111111;
+}
+
+p {
+  font-family: 'open sans';
+  font-size: 18px;
+  margin: 10px 0px;
+  color: #111111
+}
+
+
+
+li{
+  font-family: 'open sans';
+  font-size: 18px;
+  color: #111111;
+  padding: 5px 0px;
+}
+caption {
+  color: #111;
+}
+
+#caption {
+  text-align: right;
+  width: 50%;
+  margin: 0px auto;
+  font-family: 'open sans';
+}
+
+figcaption {
+  font-family: 'open sans';
+  color: #111111;
+  font-size: 11px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 25px;
+  font-family: "open sans";
+  border-radius: 25px;
+  margin: 10px 25px 10px 0px;
+  border: none;
+  background-color: #111111;
+  color: #f5f5f5;
+} 
+
+button:hover {
+  background-color: #00a2ff;
+  color: #F5F5F5;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* z-index: 99; */
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: #00a2ff;
+  color: white;
+  cursor: pointer;
+  padding: 10px 16px 5px 16px;
+  border-radius: 25px;
+}
+
+#myBtn:hover {
+  background-color: #04486f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer { 
+  cursor: pointer;
+}
+
+.btn-nav {
+  /*  content: "";
+  clear: both; */
+  display: table; 
+  margin: auto;
+}
+
+.btn-group {
+    width: 50%;
+    margin: 80px auto;
+}
+
+.btn-group button {
+    width: 70%; 
+    display: block;
+    margin: 24px auto;
+    font-size: 20px;
+    padding: 10px 25px;
+    font-family: "open sans";
+    border-radius: 25px;
+    border: none;
+    background-color: #111111;
+    color: #f5f5f5;
+}
+
+.btn-group button:hover {
+    background-color: #00a2ff;
+    color: #F5F5F5;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .btn-group {   
+      width: 90%;
+      padding: 0px;
+    }
+  }
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .btn-group button {   
+        width: 70%;
+        display: block;
+        font-size: 16px;
+        font-family: "open sans";
+        border-radius: 25px;
+        border: none;
+        background-color: #111111;
+        color: #f5f5f5;
+      }
+    }
+
+table {
+  font-family: 'open sans';
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+
+td, th {
+  border: 1px solid #c7eaff;
+  text-align: left;
+  padding: 8px 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #c7eaff;
+}
+
+.about {
+      width: 50%;
+      margin: 20% auto 0px;
+      text-align: center;
+    }
+
+.paragraph {
+      width: 50%;
+      margin: 100px auto 0px;
+      text-align: left;
+    }
+.card {
+  width: 70%;
+  margin: 75px auto;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, */
+@media screen and (max-width: 700px) {
+.card {
+  width: 90%;
+  margin: 80px auto;
+}
+}
+
+.container {
+  display: flex;
+}
+
+.hs {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, */
+@media screen and (max-width: 700px) {
+  .hs {   
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    }
+  } 
+
+/* Responsive layout - when the screen is less than 700px wide, */
+@media screen and (max-width: 700px) {
+  .hs h4 a {
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 8px 15px 8px 0px;
+    border: none;
+    background-color: #111111;
+    color: #f5f5f5;
+    display: inline;
+    font-weight: 400;
+    align-items: center;
+  }
+}
+
+.topnav {
+    overflow: hidden;
+    position: fixed;
+    background-color: #F5F5F5;
+    top: 0;
+    width: 100%;
+}
+
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #111111;
+    text-align: center;
+    font-family: 'open sans';
+    float: right;
+    padding: 16px 24px;
+    text-decoration: none;
+    font-weight: 400;
+  } 
+
+  .topnav a:hover {
+    background-color: #111111;
+    color: #F5F5F5;
+  }
